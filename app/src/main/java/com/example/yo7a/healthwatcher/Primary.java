@@ -23,19 +23,12 @@ public class Primary extends AppCompatActivity {
         Button Ox2 = this.findViewById(R.id.O2);
         Button RRate = this.findViewById(R.id.RR);
         Button VitalSigns = this.findViewById(R.id.VS);
-        Button Abt = this.findViewById(R.id.About);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             user = extras.getString("Usr");
             //The key argument here must match that used in the other activity
         }
-
-        Abt.setOnClickListener(v -> {
-            Intent i = new Intent(v.getContext(), AboutApp.class);
-            startActivity(i);
-            finish();
-        });
 
 
         //Every Test Button sends the username + the test number, to go to the wanted test after the instructions activity

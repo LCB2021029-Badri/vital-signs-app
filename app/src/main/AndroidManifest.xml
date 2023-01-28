@@ -56,10 +56,6 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AboutApp"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".O2Result"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />

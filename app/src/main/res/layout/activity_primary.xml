@@ -6,72 +6,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img"
-    android:gravity="center"
     android:orientation="vertical"
-    android:paddingLeft="16dp"
-    android:paddingTop="16dp"
-    android:paddingRight="16dp"
-    android:paddingBottom="16dp"
-    android:weightSum="1"
-    tools:context="com.example.yo7a.healthwatcher.Primary"
-    android:layout_centerInParent="true">
+    tools:context="com.example.yo7a.healthwatcher.Primary">
 
     <RelativeLayout
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        app:srcCompat="@mipmap/logo"
-        android:visibility="gone"/>
-
-    <Space
-        android:id="@+id/space"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_below="@id/imageView"/>
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/one"
-            android:layout_below="@id/space"
             android:layout_width="match_parent"
             android:padding="15dp"
+            android:weightSum="2"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
+                android:layout_weight="1"
+                android:padding="8dp"
                 android:id="@+id/HR"
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:textAllCaps="false"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_marginVertical="5dp"
                 android:layout_marginHorizontal="15dp"
                 android:text="Heart \nRate"
                 android:textSize="20sp"
-                android:textColor="@color/mainLight"
-                android:background="@drawable/buttonbg" />
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttononclick" />
 
             <Button
+                android:padding="8dp"
+                android:layout_weight="1"
                 android:id="@+id/RR"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:layout_marginHorizontal="15dp"
                 android:text="Respiration \nRate"
                 android:layout_marginVertical="5dp"
                 android:textSize="20sp"
-                android:textColor="@color/mainLight"
-                android:background="@drawable/buttonbg" />
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttononclick" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginVertical="0dp"
             android:id="@+id/two"
             android:layout_below="@id/one"
             android:padding="15dp"
+            android:weightSum="2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -79,36 +65,41 @@
 
 
     <Button
+        android:padding="8dp"
+        android:layout_weight="1"
         android:id="@+id/BP"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginVertical="5dp"
         android:textAllCaps="false"
         android:layout_marginHorizontal="15dp"
         android:text="Blood\n Pressure"
         android:textSize="20sp"
-        android:textColor="@color/mainLight"
-        android:background="@drawable/buttonbg"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttononclick"
         app:srcCompat="@mipmap/bp1" />
 
     <Button
+        android:layout_weight="1"
+        android:padding="8dp"
         android:id="@+id/O2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginVertical="5dp"
         android:layout_marginHorizontal="15dp"
         android:textAllCaps="false"
         android:text="Soluble\n0xygen"
         android:gravity="center"
         android:textSize="20sp"
-        android:textColor="@color/mainLight"
-        android:background="@drawable/buttonbg"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttononclick"
         app:srcCompat="@mipmap/or1" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/three"
+            android:weightSum="2"
             android:layout_below="@id/two"
             android:padding="15dp"
             android:gravity="center"
@@ -117,35 +108,37 @@
             android:orientation="horizontal">
 
     <Button
+        android:padding="8dp"
         android:id="@+id/VS"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_marginVertical="5dp"
         android:textAllCaps="false"
         android:text="Vital \nSigns"
         android:textSize="20sp"
-        android:textColor="@color/mainLight"
+        android:textColor="#FFFFFF"
         android:layout_marginHorizontal="15dp"
-        android:background="@drawable/buttonbg"
+        android:background="@drawable/buttononclick"
         app:srcCompat="@mipmap/avs" />
 
         </LinearLayout>
 
+        <!--   # SAMANWITH ikkada button ki code chey      -->
         <Button
-            android:id="@+id/About"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="right"
-            android:layout_marginVertical="5dp"
-            android:layout_below="@id/three"
-            android:text="About us"
-            android:layout_alignParentRight="true"
-            android:textColor="@color/mainLight"
-            android:background="@android:color/transparent"
+            android:layout_marginTop="60dp"
+            android:layout_width="150dp"
+            android:padding="8dp"
+            android:layout_height="150dp"
             android:textAllCaps="false"
-            android:scaleType="fitEnd"
-            app:srcCompat="@mipmap/ab"
-            android:gravity="center"/>
+            android:text="Diagnose\nNow"
+            android:gravity="center"
+            android:layout_below="@id/three"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/buttononclick2" />
 
     </RelativeLayout>
 

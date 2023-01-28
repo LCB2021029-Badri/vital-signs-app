@@ -7,16 +7,16 @@
     android:background="@drawable/img2"
     android:gravity="center"
     android:orientation="vertical"
-    android:paddingLeft="64dp"
+    android:paddingLeft="24dp"
     android:paddingTop="16dp"
-    android:paddingRight="64dp"
+    android:paddingRight="24dp"
     android:paddingBottom="16dp"
     tools:context="com.example.yo7a.healthwatcher.StartVitalSigns"
     android:layout_centerInParent="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.87"
-        android:text="- Lightly place your index \n  finger on the rear camera.\n\n- Make sure the camera is fully \n   covered. \n\n- Measure in a shaded \n  environment. \n\n- Don't move your finger until\n   the measurement is \n   complete. \n\n- Finally place your finger then \n   press start. "
+        android:text="Lightly place your index finger on the rear camera.\n\nMake sure the camera is fully covered.\n\nMeasure in a shaded environment.\n\nDon't move your finger until the measurement is complete.\n\nFinally place your finger then press start."
         android:textColor="@color/mainLight"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -53,14 +53,13 @@
         android:layout_below="@id/space2"
         android:id="@+id/StartVS"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginVertical="5dp"
         android:text="Start"
-        android:textAllCaps="false"
         android:textSize="20sp"
-        android:textColor="@color/mainLight"
-        android:background="@drawable/buttonbg"/>
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttononclick"/>
 
     </RelativeLayout>
 
